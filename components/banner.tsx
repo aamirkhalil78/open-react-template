@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 export default function Banner() {
-  const [bannerOpen, setBannerOpen] = useState<boolean>(true)
+  const [bannerOpen, setBannerOpen] = useState<boolean>(false)
 
   return (
     <>
@@ -17,7 +17,7 @@ export default function Banner() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Download<span className="hidden sm:inline"> on GitHub</span>
+              Download<span className="hidden sm:inline"> on GitHub</span>
               </a>{' '}
               <span className="italic px-1.5">or</span>{' '}
               <a className="font-medium hover:underline text-emerald-400" href="https://cruip.com/open-pro/" target="_blank" rel="noreferrer">
@@ -36,3 +36,4 @@ export default function Banner() {
     </>
   )
 }
+
